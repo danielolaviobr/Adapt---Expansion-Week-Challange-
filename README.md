@@ -1,6 +1,6 @@
 # Adapt - Expansion Week #
 
-This project is a landing page for the Rocketseat - Expansion Week Challange. It's a simple landing page about self-adaptation.##
+This project is a landing page for the Rocketseat - Expansion Week Challange. It's a simple landing page about self-adaptation.
 
 ## Technologies
 
