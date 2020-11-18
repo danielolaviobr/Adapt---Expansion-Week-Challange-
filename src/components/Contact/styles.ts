@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   justify-content: center;
 
-  border: solid 2px transparent;
+  border: solid 3px transparent;
   border-radius: 5px;
 
   ${(props) =>

@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { text1, text2 } from "../Info/infoText";
+import {
+  text1,
+  text2,
+  text3,
+  text4,
+  text5,
+  text6,
+  text7,
+  text8,
+  text9,
+  text10,
+} from "../Info/infoText";
 
 import { Container, ModalBackground } from "./styles";
 
@@ -38,11 +49,21 @@ const Modal: React.FC<ModalProps> = ({ handleModalClose }) => {
         <br />
         <motion.p>{text2}</motion.p>
         <br />
-        <motion.p>{text2}</motion.p>
+        <motion.p>{text3}</motion.p>
         <br />
-        <motion.p>{text2}</motion.p>
+        <motion.p>{text4}</motion.p>
         <br />
-        <motion.p>{text2}</motion.p>
+        <motion.p>{text5}</motion.p>
+        <br />
+        <motion.p>{text6}</motion.p>
+        <br />
+        <motion.p>{text7}</motion.p>
+        <br />
+        <motion.p>{text8}</motion.p>
+        <br />
+        <motion.p>{text9}</motion.p>
+        <br />
+        <motion.p>{text10}</motion.p>
         <br />
       </ModalBackground>
     </Container>

@@ -44,5 +44,6 @@ export const ModalBackground = styled(motion.div)`
     text-align: justify;
     text-indent: 30px;
     z-index: 12;
+    align-self: start;
   }
 `;

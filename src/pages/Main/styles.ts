@@ -72,6 +72,22 @@ export const PageImageBackground = styled.div<PageImageBackgroundProps>`
     font-weight: bold;
     letter-spacing: -2px;
   }
+
+  h1 + h1 {
+    padding-left: 10px;
+
+    @keyframes newsletterAnimation {
+      0% {
+        filter: brightness(0) invert(1);
+      }
+
+      50% {
+        filter: none;
+      }
+    }
+
+    color: #000;
+  }
 `;
 
 export const Text = styled.div<TextProps>`
@@ -140,45 +156,4 @@ export const Text = styled.div<TextProps>`
             animation-delay: 5s;
           }
         `}
-`;
-
-export const Buttons = styled.div`
-  margin-top: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 400px;
-
-  button {
-    padding: 0 8px;
-    margin: 8px;
-    min-width: 96px;
-    height: 40px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    background: #fff;
-    color: #000;
-
-    border: 1px solid #fff;
-    border-radius: 5px;
-    outline: none;
-
-    &:hover {
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &:hover:nth-child(1) {
-      background-image: linear-gradient(90deg, #98de5b, #08e1ae);
-    }
-    &:hover:nth-child(2) {
-      background-image: linear-gradient(90deg, #0acffe, #495aff);
-    }
-    &:hover:nth-child(3) {
-      background-image: linear-gradient(90deg, #b224ef, #7579ff);
-    }
-  }
 `;

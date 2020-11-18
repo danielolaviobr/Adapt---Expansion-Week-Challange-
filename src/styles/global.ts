@@ -33,7 +33,7 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  ::-moz-selection { /* Code for Firefox */
+  ::-moz-selection { 
   color: #fff;
   background: #bb00ff;
 }

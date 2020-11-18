@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container } from "./styles";
-import { text1, text2 } from "./infoText";
+import { text1, text2, text3 } from "./infoText";
 import Modal from "../Modal";
 import { AnimatePresence } from "framer-motion";
 
@@ -25,6 +25,8 @@ const Info: React.FC<InfoProps> = ({
         <p>{text1}</p>
         <br />
         <p>{text2}</p>
+        <br />
+        <p>{text3}</p>
         <br />
         <button onClick={handleModalOpen}>
           <span>Ler mais</span>
