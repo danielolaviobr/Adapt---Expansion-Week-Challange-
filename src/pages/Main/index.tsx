@@ -2,18 +2,17 @@ import React, { useCallback, useState } from "react";
 import {
   Text,
   Container,
-  // Buttons,
   PageBackground,
   PageVideoBackground,
-  PageImageBackground,
+  PageFooterBackground,
 } from "./styles";
 
-import street from "../../assets/street.png";
-import tracks from "../../assets/tracks.png";
-import church from "../../assets/church.png";
 import Contact from "../../components/Contact";
 import Info from "../../components/Info";
 import Transformer from "../../components/Transformer";
+import Triangle from "../../components/GeoForms/Triangle";
+import Circle from "../../components/GeoForms/Circle";
+import Square from "../../components/GeoForms/Square";
 
 const Main: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,13 +46,35 @@ const Main: React.FC = () => {
           handleModalClose={handleModalClose}
         />
         <Transformer />
+        <Triangle
+          left={1000}
+          top={600}
+          rotate={70}
+          color={"#05f"}
+          scale={0.5}
+        />
+        <Circle left={15} top={120} color={"#05f"} scale={1} />
+        <Square
+          left={800}
+          top={320}
+          color={"#8338ec"}
+          scale={1.2}
+          rotate={70}
+        />
+        <Triangle
+          left={250}
+          top={820}
+          rotate={10}
+          color={"#70e000"}
+          scale={0.8}
+        />
       </PageBackground>
-      <PageImageBackground backgroundURL={tracks}>
+      <PageFooterBackground>
         <div className="text">
           <h1>Se inscreva em nossa</h1> <h1>newsletter</h1>
         </div>
         <Contact />
-      </PageImageBackground>
+      </PageFooterBackground>
     </Container>
   );
 };

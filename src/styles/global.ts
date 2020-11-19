@@ -8,11 +8,11 @@ export default createGlobalStyle`
     border: 0;
   }
 
+
   body {
     background: #000;
     color: #fff;
     -webkit-font-smooth: antialiased;
-    overflow-x: hidden;
   }
 
   body, input, button {

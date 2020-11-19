@@ -1,9 +1,5 @@
 import styled, { css } from "styled-components";
 
-interface PageImageBackgroundProps {
-  backgroundURL?: string;
-}
-
 interface TextProps {
   numberOfChilds: 2 | 3;
 }
@@ -11,6 +7,7 @@ interface TextProps {
 export const Container = styled.div``;
 
 export const PageVideoBackground = styled.div`
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
@@ -21,6 +18,7 @@ export const PageVideoBackground = styled.div`
   justify-content: center;
 
   video {
+    overflow-x: hidden;
     position: absolute;
     height: 100vh;
     min-height: 100%;
@@ -29,6 +27,7 @@ export const PageVideoBackground = styled.div`
 `;
 
 export const PageBackground = styled.div`
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
@@ -42,10 +41,10 @@ export const PageBackground = styled.div`
   justify-content: space-between;
 `;
 
-export const PageImageBackground = styled.div<PageImageBackgroundProps>`
+export const PageFooterBackground = styled.div`
+  overflow-x: hidden;
   width: 100vw;
   height: 60vh;
-  /* scroll-snap-align: start; */
   background: linear-gradient(135deg, #05f, #09f);
   background-size: cover;
 

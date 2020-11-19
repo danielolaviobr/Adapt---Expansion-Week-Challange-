@@ -7,6 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
+  height: 450px;
+  z-index: 1;
 
   flex: 1;
 
@@ -35,5 +38,12 @@ export const Transform = styled(motion.div)`
   span {
     font-weight: 500;
     font-size: 32px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 `;

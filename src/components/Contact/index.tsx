@@ -34,9 +34,6 @@ const Contact: React.FC = () => {
     try {
       await schema.validate({ email: userEmail });
       addToast({ message: "Inscrição realizada" });
-      // TODO send to back-end
-
-      // addToast({ message: "Please check your inbox" });
       setUserEmail("");
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
@@ -45,6 +42,15 @@ const Contact: React.FC = () => {
       }
     }
   }, [userEmail, addToast]);
+
+  const handleEnter = useCallback(
+    (event) => {
+      if (event.key === "Enter") {
+        handleUserSubmit();
+      }
+    },
+    [handleUserSubmit]
+  );
 
   return (
     <ContentWrapper>
@@ -55,6 +61,7 @@ const Contact: React.FC = () => {
           onBlur={handleUserBlur}
           onChange={handleEmailChange}
           value={userEmail}
+          onKeyDown={handleEnter}
         />
         <Button onClick={handleUserSubmit}>
           <span>Inscrever-se</span>

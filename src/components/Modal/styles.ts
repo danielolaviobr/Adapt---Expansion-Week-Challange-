@@ -13,11 +13,13 @@ export const Container = styled(motion.div)`
   align-items: center;
   justify-content: center;
   z-index: 10;
+  overflow-x: visible;
 `;
 
 export const ModalBackground = styled(motion.div)`
   height: 576px;
   width: 1024px;
+  overflow-x: visible;
 
   background: #fff;
   padding: 30px 50px;
@@ -35,10 +37,12 @@ export const ModalBackground = styled(motion.div)`
     color: #000;
     font-weight: bold;
     font-size: 36px;
+    overflow-x: visible;
     z-index: 12;
   }
 
   p {
+    overflow-x: visible;
     color: #000;
     font-weight: 500;
     text-align: justify;
