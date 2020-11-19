@@ -17,12 +17,26 @@ export const PageVideoBackground = styled.div`
   align-items: center;
   justify-content: center;
 
+  overflow-x: hidden;
+
   video {
-    overflow-x: hidden;
     position: absolute;
-    height: 100vh;
+
+    width: auto;
+    height: auto;
+
+    min-width: 100%;
     min-height: 100%;
+
+    max-width: 100vw;
+    /* max-height: 100vh; */
     filter: grayscale(100%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
   }
 `;
 

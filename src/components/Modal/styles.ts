@@ -19,10 +19,11 @@ export const Container = styled(motion.div)`
 export const ModalBackground = styled(motion.div)`
   height: 576px;
   width: 1024px;
-  overflow-x: visible;
 
+  overflow-x: hidden;
+  overflow-y: hidden;
   background: #fff;
-  padding: 30px 50px;
+  padding: 30px 50px 0px 50px;
 
   border-radius: 5px;
   display: flex;
@@ -33,6 +34,16 @@ export const ModalBackground = styled(motion.div)`
   overflow: scroll;
 
   z-index: 11;
+
+  .text {
+    height: 78%;
+    overflow-x: visible;
+    overflow-y: scroll;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px 24px 4px 16px;
+  }
+
   h1 {
     color: #000;
     font-weight: bold;

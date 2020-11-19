@@ -44,27 +44,29 @@ const Modal: React.FC<ModalProps> = ({ handleModalClose }) => {
         className="modal-shade"
       >
         <motion.h1>Adaptabilidade</motion.h1>
-        <br />
-        <motion.p>{text1}</motion.p>
-        <br />
-        <motion.p>{text2}</motion.p>
-        <br />
-        <motion.p>{text3}</motion.p>
-        <br />
-        <motion.p>{text4}</motion.p>
-        <br />
-        <motion.p>{text5}</motion.p>
-        <br />
-        <motion.p>{text6}</motion.p>
-        <br />
-        <motion.p>{text7}</motion.p>
-        <br />
-        <motion.p>{text8}</motion.p>
-        <br />
-        <motion.p>{text9}</motion.p>
-        <br />
-        <motion.p>{text10}</motion.p>
-        <br />
+        <div className="text">
+          <br />
+          <motion.p>{text1}</motion.p>
+          <br />
+          <motion.p>{text2}</motion.p>
+          <br />
+          <motion.p>{text3}</motion.p>
+          <br />
+          <motion.p>{text4}</motion.p>
+          <br />
+          <motion.p>{text5}</motion.p>
+          <br />
+          <motion.p>{text6}</motion.p>
+          <br />
+          <motion.p>{text7}</motion.p>
+          <br />
+          <motion.p>{text8}</motion.p>
+          <br />
+          <motion.p>{text9}</motion.p>
+          <br />
+          <motion.p>{text10}</motion.p>
+          <br />
+        </div>
       </ModalBackground>
     </Container>
   );
