@@ -28,8 +28,8 @@ export const PageVideoBackground = styled.div`
     min-width: 100%;
     min-height: 100%;
 
-    max-width: 100vw;
-    max-height: 100vh;
+    /* max-width: 100vw;
+    max-height: 100vh; */
     filter: grayscale(100%);
 
     position: absolute;
@@ -58,7 +58,7 @@ export const PageBackground = styled.div`
 
 export const PageFooterBackground = styled.div`
   overflow-x: hidden;
-  width: 100vw;
+  max-width: 100vw;
   height: 60vh;
   background: linear-gradient(135deg, #05f, #09f);
   background-size: cover;

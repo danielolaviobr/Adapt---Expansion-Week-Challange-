@@ -50,7 +50,7 @@ const Main: React.FC = () => {
           left={1000}
           top={600}
           rotate={70}
-          color={"#05f"}
+          color={"#ec20ff"}
           scale={0.5}
         />
         <Circle left={15} top={120} color={"#05f"} scale={1} />
