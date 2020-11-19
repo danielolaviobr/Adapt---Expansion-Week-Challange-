@@ -2,7 +2,7 @@
 
 This project is a landing page for the Rocketseat - Expansion Week Challange. It's a simple landing page about self-adaptation.
 
-!(Adapt)[images/demo.gif]
+![Adapt](images/demo.gif)
 
 ## Technologies
 
