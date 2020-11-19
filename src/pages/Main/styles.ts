@@ -29,7 +29,7 @@ export const PageVideoBackground = styled.div`
     min-height: 100%;
 
     max-width: 100vw;
-    /* max-height: 100vh; */
+    max-height: 100vh;
     filter: grayscale(100%);
 
     position: absolute;
