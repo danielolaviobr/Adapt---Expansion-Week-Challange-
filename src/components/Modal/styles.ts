@@ -19,6 +19,7 @@ export const Container = styled(motion.div)`
 export const ModalBackground = styled(motion.div)`
   height: 576px;
   width: 1024px;
+  margin: 0 48px;
 
   overflow-x: hidden;
   overflow-y: hidden;
