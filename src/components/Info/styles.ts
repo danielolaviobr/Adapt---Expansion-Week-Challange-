@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   flex: 1;
   max-width: 550px;
+  min-width: 350px;
 
   h1 {
     font-weight: bold;
@@ -47,7 +48,6 @@ export const Container = styled.div`
         linear-gradient(90deg, #f83600, #f9d423);
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
-      /* border: none; */
     }
   }
 `;

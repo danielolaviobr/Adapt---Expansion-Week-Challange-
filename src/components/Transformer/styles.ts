@@ -10,7 +10,7 @@ export const Container = styled.div`
   overflow-y: hidden;
   height: 450px;
   z-index: 1;
-
+  min-width: 300px;
   flex: 1;
 
   h1 {
