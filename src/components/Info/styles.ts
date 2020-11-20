@@ -7,7 +7,8 @@ export const Container = styled.div`
 
   align-items: center;
   justify-content: center;
-  width: 550px;
+  flex: 1;
+  max-width: 550px;
 
   h1 {
     font-weight: bold;
