@@ -13,7 +13,7 @@ export const Container = styled(motion.div)`
   align-items: center;
   justify-content: center;
   z-index: 10;
-  overflow-x: visible;
+  overflow: hidden;
 `;
 
 export const ModalBackground = styled(motion.div)`
@@ -31,7 +31,7 @@ export const ModalBackground = styled(motion.div)`
   align-items: center;
   justify-content: start;
 
-  overflow: scroll;
+  overflow: hidden;
 
   z-index: 11;
 

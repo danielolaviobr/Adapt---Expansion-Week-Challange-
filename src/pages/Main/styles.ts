@@ -17,10 +17,14 @@ export const PageVideoBackground = styled.div`
   align-items: center;
   justify-content: center;
 
-  overflow-x: hidden;
+  overflow: hidden;
 
   video {
+    overflow: hidden;
     position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     width: auto;
     height: auto;
@@ -28,8 +32,9 @@ export const PageVideoBackground = styled.div`
     min-width: 100%;
     min-height: 100%;
 
-    /* max-width: 100vw;
-    max-height: 100vh; */
+    max-width: 100vw;
+    max-height: 100vh;
+
     filter: grayscale(100%);
 
     position: absolute;
@@ -78,6 +83,7 @@ export const PageFooterBackground = styled.div`
     text-align: center;
 
     border-radius: 5px;
+    overflow-x: visible;
   }
 
   h1 {
@@ -89,17 +95,6 @@ export const PageFooterBackground = styled.div`
 
   h1 + h1 {
     padding-left: 10px;
-
-    @keyframes newsletterAnimation {
-      0% {
-        filter: brightness(0) invert(1);
-      }
-
-      50% {
-        filter: none;
-      }
-    }
-
     color: #000;
   }
 `;
